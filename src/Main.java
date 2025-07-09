@@ -3,19 +3,18 @@
 public class Main {
     public static void main(String[] args) {
 
-        String name="Bad Kedy şero";
-        char firstLetter='B';
-        int age=29;
-        double height =50.9;
-        boolean isEmplooyed= true;
+        //+ output plus
+        // , comma grouping separator
+        // ( negative numbers are enclosed in ()
+        // space   display a minus if negative, space if positive  lining numbers
+        double piece1 = 90000.99;
+        double piece2 = 1000000.15;
+        double piece3 = -5400000.01;
+        System.out.printf("%,.2f\n",piece1);
+        System.out.printf("%,.2f\n",piece2);
+        System.out.printf("%,.2f\n",piece3);
 
-        System.out.printf("Selam %s\n", name);
-        System.out.printf("Your name starts with a %c\n", firstLetter);
-        System.out.printf("you are  %d years old\n",age);
-        System.out.printf("You are %.1f cm tall\n",height);
-        System.out.printf("Employed: %b\n", isEmplooyed);
-
-
+        // width
 
     }
     }
