@@ -1,32 +1,29 @@
+import jdk.jshell.EvalException;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
 
-Scanner scanner = new Scanner(System.in);
+        double radius;
+        double circumference;
+        double area;
+        double volume;
 
 
-double a;
-double b;
-double c;
 
+        System.out.println("enter the radius: ");
+        radius= scanner.nextDouble();
 
-        System.out.println("Length of Side A: ");
-        a =scanner.nextDouble();
+        circumference= 2 * Math.PI * radius;
+        area =Math.PI *  Math.pow(radius,2);
+        volume = (4.0/3.0)* Math.PI* Math.pow(radius,3);
 
-        if(a<=0){
-            System.out.println("The sides must to be positive numbers!");
-        }
-        System.out.println("Length of Side B: ");
-        b =scanner.nextDouble();
-
-if(b<=0){
-    System.out.println("The sides must to be positive numbers!");
-}
-
-       c= Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
-        System.out.println("Hypotenuse:"+c);
-scanner.close();
+        System.out.printf("The circumference: %.1fcm\n",circumference);
+        System.out.printf("The area: %.1fcm²\n",area);
+        System.out.printf("The volume: %.1fcm³\n",volume);
+        scanner.close();
     }
-}
+    }
