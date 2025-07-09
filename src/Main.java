@@ -1,29 +1,21 @@
-import jdk.jshell.EvalException;
 
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        String name="Bad Kedy şero";
+        char firstLetter='B';
+        int age=29;
+        double height =50.9;
+        boolean isEmplooyed= true;
 
-        double radius;
-        double circumference;
-        double area;
-        double volume;
+        System.out.printf("Selam %s\n", name);
+        System.out.printf("Your name starts with a %c\n", firstLetter);
+        System.out.printf("you are  %d years old\n",age);
+        System.out.printf("You are %.1f cm tall\n",height);
+        System.out.printf("Employed: %b\n", isEmplooyed);
 
 
 
-        System.out.println("enter the radius: ");
-        radius= scanner.nextDouble();
-
-        circumference= 2 * Math.PI * radius;
-        area =Math.PI *  Math.pow(radius,2);
-        volume = (4.0/3.0)* Math.PI* Math.pow(radius,3);
-
-        System.out.printf("The circumference: %.1fcm\n",circumference);
-        System.out.printf("The area: %.1fcm²\n",area);
-        System.out.printf("The volume: %.1fcm³\n",volume);
-        scanner.close();
     }
     }
