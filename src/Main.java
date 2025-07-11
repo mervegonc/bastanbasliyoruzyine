@@ -1,28 +1,34 @@
 public class Main {
     public static void main(String[] args) {
-       char grade ='Ş';
+       //for
+        for (int i=1; i<=10; i++){
+            System.out.println(i);
+        }
+        System.out.println("For loop is over");
 
-       switch (grade){
-           case 'A':
-               System.out.println("Perfect, You passed");
-               break;
-           case 'B':
-                   System.out.println("Very Good, You passed");
-                   break;
-           case 'C':
-               System.out.println("Good, You passed");
-               break;
-           case 'D':
-               System.out.println("Not bad, You passed");
-               break;
-           case 'E':
-               System.out.println("You should work harder, passed");
-               break;
-           case 'F':
-               System.out.println("Bad, You  didn't passed");
-               break;
-           default:
-               System.out.println("You entered invalid grade!");
-       }
+        //while
+        int i=1;
+        while (i<=10){
+            System.out.println(i);
+            i++;
+
+        }
+        System.out.println("While loop is over");
+
+        //do while
+        int j=1;
+        do{
+            System.out.println(j);
+            j++;
+        }while (j<10);
+        System.out.println("Do-While loop is over");
+
+
+        int k=100;
+        do{
+            System.out.println(k);
+            k++;
+        }while (k<10);
+        System.out.println("Do-While loop is over");
     }
 }
