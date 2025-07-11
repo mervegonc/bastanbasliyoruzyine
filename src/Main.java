@@ -1,21 +1,28 @@
 public class Main {
     public static void main(String[] args) {
-        int number = 50;
-        int number0 = 55;
-        int number1 = 60;
+       char grade ='Ş';
 
-        // Başlangıçta ilk sayıyı en büyük kabul ediyoruz
-        int theBiggest = number;
-
-        // Diğer sayıları tek tek kontrol ediyoruz
-        if(number0 > theBiggest) {
-            theBiggest = number0;
-        }
-        if(number1 > theBiggest) {
-            theBiggest = number1;
-        }
-
-        // Sonucu bir kez yazdırıyoruz
-        System.out.println("En büyük sayı: " + theBiggest);
+       switch (grade){
+           case 'A':
+               System.out.println("Perfect, You passed");
+               break;
+           case 'B':
+                   System.out.println("Very Good, You passed");
+                   break;
+           case 'C':
+               System.out.println("Good, You passed");
+               break;
+           case 'D':
+               System.out.println("Not bad, You passed");
+               break;
+           case 'E':
+               System.out.println("You should work harder, passed");
+               break;
+           case 'F':
+               System.out.println("Bad, You  didn't passed");
+               break;
+           default:
+               System.out.println("You entered invalid grade!");
+       }
     }
 }
