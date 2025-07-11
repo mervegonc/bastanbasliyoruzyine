@@ -1,20 +1,21 @@
-
-
 public class Main {
     public static void main(String[] args) {
+        int number = 50;
+        int number0 = 55;
+        int number1 = 60;
 
-        //+ output plus
-        // , comma grouping separator
-        // ( negative numbers are enclosed in ()
-        // space   display a minus if negative, space if positive  lining numbers
-        double piece1 = 90000.99;
-        double piece2 = 1000000.15;
-        double piece3 = -5400000.01;
-        System.out.printf("%,.2f\n",piece1);
-        System.out.printf("%,.2f\n",piece2);
-        System.out.printf("%,.2f\n",piece3);
+        // Başlangıçta ilk sayıyı en büyük kabul ediyoruz
+        int theBiggest = number;
 
-        // width
+        // Diğer sayıları tek tek kontrol ediyoruz
+        if(number0 > theBiggest) {
+            theBiggest = number0;
+        }
+        if(number1 > theBiggest) {
+            theBiggest = number1;
+        }
 
+        // Sonucu bir kez yazdırıyoruz
+        System.out.println("En büyük sayı: " + theBiggest);
     }
-    }
+}
