@@ -13,7 +13,7 @@ public class Main {
         if(total==number){
             System.out.println("this is perfect number: "+number);
         }else {
-            System.out.println("this is shity number:"+number);
+            System.out.println("nobody isn't perfect:"+number);
         }
 
         /*Perfect Number	Sum of Divisors
