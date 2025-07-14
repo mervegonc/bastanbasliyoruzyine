@@ -1,25 +1,31 @@
 public class Main {
     public static void main(String[] args) {
 
-      int number = 6;
-      int total=0;
+        //BFF numbers 220-284
 
-      for(int i=1;i<number;i++){
-          if(number % i==0){
-                total+=i;
-          }
+        int number = 220;
+        int number1 = 284;
+        int total = 0;
+        int total1 = 0;
 
-      }
-        if(total==number){
-            System.out.println("this is perfect number: "+number);
-        }else {
-            System.out.println("nobody isn't perfect:"+number);
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
+                total += i;
+            }
+
         }
 
-        /*Perfect Number	Sum of Divisors
-            6	1 + 2 + 3 = 6
-            28	1 + 2 + 4 + 7 + 14 = 28
-            496	1 + 2 + 4 + 8 + 16 + 31 + 62 + 124 + 248 = 496
-            8128	1 + 2 + 4 + 8 + 16 + 32 + 64 + 127 + 254 + 508 + 1016 + 2032 + 4064 = 8128*/
+        for (int i = 1; i < number1; i++) {
+            if (number1 % i == 0) {
+                total1 += i;
+            }
+        }
+
+
+        if (number == total1 && number1 == total) {
+            System.out.println("These two number are BFF's");
+        } else {
+            System.out.println("These two are strangers to each other ");
+        }
     }
 }
