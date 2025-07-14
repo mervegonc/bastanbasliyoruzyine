@@ -1,16 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        double[] myList = {1.2, 6.3, 3.4, 4.5, 5.6,};
-        double total = 0;
-        double max = myList[0];
-        for (double number : myList) {
-            if (max < number) {
-                max = number;
+
+        String[][] cities = new String[3][3];
+        cities[0][0] = "Bursa";
+        cities[0][1] = "İstanbul";
+        cities[0][2] = "Bilecik";
+        cities[1][0] = "Çorum";
+        cities[1][1] = "Ankara";
+        cities[1][2] = "Konya";
+        cities[2][0] = "Kahramanmaraş";
+        cities[2][1] = "Gaziantep";
+        cities[2][2] = "Şanlıurfa";
+        for(int i=0; i<=2; i++){
+            for(int j =0; j<=2; j++){
+                System.out.println(cities[i][j]);
             }
-            total = total + number;
-            System.out.println(number);
         }
-        System.out.println("total: " + total);
-        System.out.println("max: " + max);
     }
 }
