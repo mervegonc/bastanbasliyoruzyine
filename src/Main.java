@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         int number = 25; // Kontrol edilecek sayı
-       /* boolean isPrime = true; // Asal mı değil mi diye kontrol için bir bayrak (flag) değişkeni
+       boolean isPrime = true; // Asal mı değil mi diye kontrol için bir bayrak (flag) değişkeni
 
         // Asal sayılar 1'den büyük olmalı
         if (number <= 1) {
@@ -23,6 +23,6 @@ public class Main {
             System.out.println(number + " is a prime number.");
         } else {
             System.out.println(number + " is NOT a prime number.");
-        }*/
+        }
     }
 }
