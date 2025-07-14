@@ -1,21 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-      String student="Merve";
-      String student1="Engin";
-      String student2="Salih";
-
-
-      String[] students= new String[3];
-      students[0]="Merve";
-        students[1]="Engin";
-        students[2]="Salih";
-
-        for(int i=0; i< students.length; i++){
-            System.out.println(students[i]);
+        double[] myList = {1.2, 6.3, 3.4, 4.5, 5.6,};
+        double total = 0;
+        double max = myList[0];
+        for (double number : myList) {
+            if (max < number) {
+                max = number;
+            }
+            total = total + number;
+            System.out.println(number);
         }
-
-        for(String studenty:students){
-            System.out.println(studenty);
-        }
+        System.out.println("total: " + total);
+        System.out.println("max: " + max);
     }
 }
