@@ -1,28 +1,31 @@
 public class Main {
     public static void main(String[] args) {
-        callANumber();
+
+        String message = "Today The weather is good";
+        String newMessage = cities();
+        System.out.println(newMessage);
+        int number =addition(5,7);
+        System.out.println(number);
     }
 
-    public static void callANumber() {
-        //we are looking for number in the array
-        int[] numbers = new int[]{1, 2, 5, 7, 9, 0};
-        int lookFor = 7;
-        boolean exists = false;
 
-        for (int number : numbers) {
-            if (number == lookFor) {
-                exists = true;
-                break;
-            }
-        }
-        if (exists) {
-            giveMessage("The number is exists: "+lookFor);
-        } else {
-            giveMessage("The number isn't exists: "+lookFor);
-        }
+    public static void  add () {
+        System.out.println("Added");
+    }
+    public static void delete (){
+        System.out.println("Delete");
+    }
+    public static void update () {
+        System.out.println("Updated");
     }
 
-    public static void giveMessage(String message) {
-        System.out.println(message);
+    public static int addition (int number, int number1){
+
+        return  number + number1;
+
+    }
+
+    public static String cities (){
+        return "Ankara";
     }
 }
