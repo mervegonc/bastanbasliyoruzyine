@@ -1,10 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-      FourOperations fourOperations = new FourOperations();
-      int total =fourOperations.addition(5,9);
-        System.out.println(total);
-    }
+    Product product = new Product();
+    product.name ="Laptop";
+    product.id = 1;
+    product.description ="Computer";
+    product.price = 45800;
+    product.stockAmount =56;
 
+    ProductManager productManager = new ProductManager();
+    productManager.Add(product);
+    }
+//field and attribute
 
 }
 
