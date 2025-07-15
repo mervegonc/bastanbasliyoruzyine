@@ -1,9 +1,14 @@
 public class Main {
     public static void main(String[] args) {
 
-        LoanUI loanUI = new LoanUI();
-        loanUI.calculate(new EducatorLoanManager());
-        loanUI.calculate(new MilitaryLoanManager());
+        /*BaseLogger[] loggers = new BaseLogger[]{new DatabaseLogger(), new EmailLogger(), new FileLogger(), new ConsolLogger()};
+        //stack heap
+        for(BaseLogger logger: loggers){
+            logger.Log("log mesajı");
+        }*/
+
+        CustomerManager customerManager = new CustomerManager(new DatabaseLogger());
+        customerManager.Add();
     }
 
 
