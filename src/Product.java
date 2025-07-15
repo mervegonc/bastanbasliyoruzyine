@@ -1,4 +1,19 @@
 public class Product {
+
+    public Product(int is, String name, String description, double price, int stockAmount, String color){
+        this.id=id;
+        this.name =name;
+        this.price =price;
+        this.stockAmount =stockAmount;
+        this.description = description;
+        this.color =color;
+
+        System.out.println("Constructor initialized");
+    }
+    public Product (){
+
+    }
+
     private int id;
     private String name;
     private String description;
