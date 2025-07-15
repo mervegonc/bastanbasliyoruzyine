@@ -1,15 +1,13 @@
 public class Main {
     public static void main(String[] args) {
 
-        /*BaseLogger[] loggers = new BaseLogger[]{new DatabaseLogger(), new EmailLogger(), new FileLogger(), new ConsolLogger()};
-        //stack heap
-        for(BaseLogger logger: loggers){
-            logger.Log("log mesajı");
-        }*/
+        BaseLoanManager [] baseLoanManagers = new BaseLoanManager[]{new AgriculturalLoanManager(), new EducatorLoanManager(), new StudentLoanManager()};
 
-        CustomerManager customerManager = new CustomerManager(new DatabaseLogger());
-        customerManager.Add();
-    }
+        for (BaseLoanManager loanManager : baseLoanManagers){
+
+            System.out.println( "Calculation: "+loanManager.calculate(1000));
+        }
+  }
 
 
 }
