@@ -1,10 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+    Customer customer = new Customer();
+    Employee employee = new Employee();
+    employee.firstName ="mero";
 
 
-        FourOperation fourOperation = new FourOperation();
-        fourOperation.addition(5,5,6);
-        fourOperation.addition(5,8);
+    EmployeeManager employeeManager = new EmployeeManager();
+    CustomerManager customerManager = new CustomerManager();
+    customerManager.List();
     }
 
 
