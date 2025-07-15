@@ -1,13 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-    Customer customer = new Customer();
-    Employee employee = new Employee();
-    employee.firstName ="mero";
 
-
-    EmployeeManager employeeManager = new EmployeeManager();
-    CustomerManager customerManager = new CustomerManager();
-    customerManager.List();
+        LoanUI loanUI = new LoanUI();
+        loanUI.calculate(new EducatorLoanManager());
+        loanUI.calculate(new MilitaryLoanManager());
     }
 
 
